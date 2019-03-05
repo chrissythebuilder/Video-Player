@@ -1,0 +1,6 @@
+.progress__filled {
+    background: yellow;
+    width: 50%;
+    flex: 0;
+    flex-basis: 50%;
+}
