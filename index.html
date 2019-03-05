@@ -8,11 +8,13 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>HTML5 Video Player</title>
 </head>
 <body>
     <div class="player">
+        <h2> Today's feature clip: Big Buck Bunny </h2>
         <video class="player__video viewer" src="652333414.mp4"></video>
 
         <div class="player__controls">
@@ -21,7 +23,9 @@
             </div>
 
             <button class="player__button toggle" title="Toggle Play">►</button>
+            <span> Volume </span>
             <input type="range" name="volume" class="player__slider volume" min="0" max="1" step="0.05" value="1">
+            <span> Speed </span>
             <input type="range" name="playbackRate" class="player__slider playback" min="0.5" max="2" step="0.1" value="1">
             <button data-skip="-10" class="player__button">« 10s</button>
             <button data-skip="25" class="player__button">25s »</button>

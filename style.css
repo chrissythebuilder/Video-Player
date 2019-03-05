@@ -1,6 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background: rgb(21, 99, 92);
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+  
+.player {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    overflow: hidden;
+    max-width: 800px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.progress {
+    display: flex;
+    flex-basis: 100%;
+    height: 5px;
+    transition: height 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
 .progress__filled {
-    background: yellow;
-    width: 50%;
+    background: palevioletred;
     flex: 0;
-    flex-basis: 50%;
+    height: 10px;
+}
+
+span {
+    font-weight: 800;
 }
